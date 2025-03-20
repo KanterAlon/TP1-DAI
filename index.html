@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Notas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+
+    
+    <div class="form-container">
+      <form id="registroForm" >
+        <label for="nombre">Nombre Completo:</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre completo">
+        <div id="nombreMsg" class="message"></div>
+        
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" placeholder="Ingresa tu email">
+        <div id="emailMsg" class="message"></div>
+        
+        <label for="password">Contraseña:</label>
+        <input type="password" id="password" name="password" placeholder="Ingresa tu contraseña">
+        <div id="passwordMsg" class="message"></div>
+
+        
+        <label for="confirmPassword">Confirmar Contraseña:</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirma tu contraseña">
+        <div id="confirmPasswordMsg" class="message"></div>
+
+        
+        <button type="submit" class="submit-btn" onclick="validateForm()">Registrarse</button>
+        <div id="formMsg" class="message"></div>
+      </form>
+    </div>
+    
+  
+  <script src="script.js"></script>
+</body>
+  </hEAd>
+</html>
