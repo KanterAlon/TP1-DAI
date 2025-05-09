@@ -9,9 +9,8 @@
 <body>
   <div class="container">
 
-    
     <div class="form-container">
-      <form id="registroForm" >
+      <form id="registroForm" onsubmit="return validateForm(event)">
         <label for="nombre">Nombre Completo:</label>
         <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre completo">
         <div id="nombreMsg" class="message"></div>
@@ -30,13 +29,11 @@
         <div id="confirmPasswordMsg" class="message"></div>
 
         
-        <button type="submit" class="submit-btn" onclick="validateForm()">Registrarse</button>
+        <button type="submit" class="submit-btn">Registrarse</button>
         <div id="formMsg" class="message"></div>
       </form>
     </div>
     
-  
   <script src="script.js"></script>
 </body>
-  </hEAd>
 </html>
