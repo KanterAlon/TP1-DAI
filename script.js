@@ -67,19 +67,19 @@ function validateConfirmPassword() {
 }
 
 function validateForm(event) {
-  event.preventDefault(); // Evitar el envío del formulario
+  event.preventDefault(); 
 
   const formMsg = document.getElementById('formMsg');
 
-  // Validar todos los campos antes de mostrar el mensaje
+
   if (validateNombre() && validateEmail() && validatePassword() && validateConfirmPassword()) {
       formMsg.textContent = "¡Registro exitoso!";
       formMsg.style.color = "green";
 
-      // Limpiar el formulario después de un registro exitoso (opcional)
+     
       document.getElementById('registroForm').reset();
 
-      return false;  // No enviar el formulario en este caso
+      return false;  
   }
 
   formMsg.textContent = "Corrige los errores en el formulario";
